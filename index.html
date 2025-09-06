@@ -1,228 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Skill-Portfolio</title>
+    <link rel="icon" type="image/png" href="Image/téléchargement (2).jpg">
+    
+        <!-- ...existing code... -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/adminify.png" type="image/x-icon">
-    <title>StoreBox</title>
 </head>
+
 <body>
-    <!--SIDEBAR-->
-    <section id="sidebar">
-        <a href="#" class="brand"><i class='bx bxs-smile icon'></i> SimplePage</a>
-        <ul class="side-menu">
-            <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
-            <li class="divider" data-text="main">Main</li>
-            <li>
-                <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
-                <ul class="side-dropdown">
-                    <li> <a href="#">Alert</a></li>
-                    <li> <a href="#">Badges</a></li>
-                    <li> <a href="#">Breadcrumbs</a></li>
-                    <li> <a href="#">Button</a></li>
-                </ul>
-            </li>
-            <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
-            <li><a href="#"><i class='bx bxs-widget icon'></i> widgets</a></li>
-            <li class="divider" data-text="table and forms">Table and forms</li>
-            <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
-            <li>
-                <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
-                <ul class="side-dropdown">
-                    <li> <a href="#">Basic</a></li>
-                    <li> <a href="#">Select</a></li>
-                    <li> <a href="#">Checkbox</a></li>
-                    <li> <a href="#">Radio</a></li>
-                </ul>
-            </li>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
         </ul>
-        <div class="ads">
-            <div class="wrapper">
-                <a href="#" class="btn-upgrade">Upgrade</a>
-                 <p>Become a <span>PRO</span>member and enjoy <span>All Features</span></p>
-            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="Image/474236093_934384882161592_1012045288609958288_n.jpg" alt="Profile Picture">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is a brief introduction about myself and my work. I fight hard to win not to lose.</p>
         </div>
-       
     </section>
-    
-    <!--SIDEBAR-->
 
-    <!--NAVBAR-->
-     <section id="content">
-    <!--NAVBAR-->
-     <nav>
-        <i class='bx bx-menu toggle-sidebar'></i>
-        <form action="#">
-            <div class="form-group">
-                <input type="text" placeholder="Search...">
-                <i class='bx bx-search icon' ></i>
-            </div>
-        </form>
-        <a href="#" class="nav-link">
-            <i class='bx bxs-bell icon'></i>
-            <span class="badge">5</span>
-        </a>
-        <a href="#" class="nav-link">
-            <i class='bx bxs-message-square-dots'></i>
-            <span class="badge">8</span>
-        </a>
-        <span class="divider"></span>
-        <div class="profile">
-             <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?
-             ixid=MmwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3Dixlib=rb-1.2.1&auto=format&
-             fit=crop&w=500&q=60" alt="">
-             <ul class="profile-link">
-                <li><a href="#"><i class='bx bxs-user-circle icon' ></i> profile</a></li>
-                <li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
-                <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
-             </ul>
-        </div>
-     </nav>
-    <!--NAVBAR-->
+    <!-- About Me Section -->
+    <section id="aboutme" class="aboutme">
+        <h2>About Me</h2>
+        <p>Hi! I'm Alvin, a passionate learner who loves creating beautiful and functional web experiences. 
+        <br>In my free time, I enjoy exploring new skills and learning exciting things every day.</p>
 
-    <!--MAIN-->
-      <main>
-        <h1 class="title">Dashboard</h1>
-        <ul class="breadcrumbs">
-            <li><a href="#">Home</a></li>
-            <li class="divider">/</li>
-            <li><a href="#" class="active">Dashboard</a></li>
-        </ul>
-       <div class="info-data"> 
-            <div class="card">
-                <div class="head">
-                    <div>
-                        <h2>1000</h2>
-                        <p>Traffic</p>
-                    </div>
-                    <i class='bx bx-trending-up icon' ></i>
-                </div>
-                <span class="progress" data-value="60%"></span>
-                <span class="label">60%</span>
-            </div>
-            <div class="card">
-                <div class="head">
-                    <div>
-                        <h2>2000</h2>
-                        <p>Sales</p>
-                    </div>
-                    <i class='bx bx-trending-down icon down' ></i>
-                </div>
-                <span class="progress" data-value="80%"></span>
-                <span class="label">80%</span>
-            </div>
-            <div class="card">
-                <div class="head">
-                    <div>
-                        <h2>569</h2>
-                        <p>Pageviews</p>
-                    </div>
-                    <i class='bx bx-trending-up icon' ></i>
-                </div>
-                <span class="progress" data-value="50%"></span>
-                <span class="label">50%</span>
-            </div>
-            <div class="card">
-                <div class="head">
-                    <div>
-                        <h2>630</h2>
-                        <p>Visitors</p>
-                    </div>
-                    <i class='bx bx-trending-up icon' ></i>
-                </div>
-                <span class="progress" data-value="70%"></span>
-                <span class="label">70%</span>
-            </div>
-       </div>
-       <div class="data">
-            <div class="content-data">
-                <div class="head">
-                    <h3>Sales Report</h3>
-                     <div class="menu">
-                          <i class='bx bx-dots-horizontal-rounded icon'></i>
-                          <ul class="menu-link">
-                            <li><a href="#">Edit</a></li>
-                            <li><a href="#">Save</a></li>
-                            <li><a href="#">Remove</a></li>
-                          </ul>
-                     </div>
-                </div>
-                <div class="chart">
-                </div>
-                <div class="chart">
-                    <div id="chart"></div>
-                </div>
-            </div>
-            <div class="content-data">
-                <div class="head">
-                    <h3>Chatbox</h3>
-                     <div class="menu">
-                          <i class='bx bx-dots-horizontal-rounded icon'></i>
-                          <ul class="menu-link">
-                            <li><a href="#">Edit</a></li>
-                            <li><a href="#">Save</a></li>
-                            <li><a href="#">Remove</a></li>
-                          </ul>
-                     </div>
-                 </div>
-                 <div class="chat-box">
-                    <p class="day"><span>Today</span></p>
-                    <div class="msg">
-                        <img src="images/1.jpg" alt="">
-                 <div class="chat">
-                 <div class="profile">
-                 <span class="username">Cleint</span>
-                 <span class="time">17:45</span>
-                         </div>
-                         <p>Hi. Hello</p>
-                      </div>
-                   </div>
-                   <div class="msg me">
-                 <div class="chat">
-                 <div class="profile">
-                <span class="username">StoreBox</span>
-            <span class="time">17:45</span>
-                     </div>
-                     <p>Thank you for contacting StoreBox!
-                      Please tell us how can we help you? </p>
-                  </div>
-               </div>
-               <div class="msg me">
-     <div class="chat">
-        <div class="profile">
-            <span class="username">StoreBox</span>
-        <span class="time">17:45</span>
-                 </div>
-                 <p>Thank you for contacting StoreBox!
-                  Please tell us how can we help you? </p>
-                  <div class="msg me">
-         <div class="chat">
-            <div class="profile">
-                <span class="username">StoreBox</span>
-            <span class="time">17:45</span>
-                     </div>
-                     <p>Thank you for contacting StoreBox!
-                      Please tell us how can we help you? </p>
-                </div>
-            </div>
-            <form action="#">
-                <div class="form-group">
-                    <input type="text" placeholder="Type...">
-                    <button type="submit" class="btn-send"><i class="bx bxs-send"></i></button>
-                </div>
-             </form>
-       </div>
-      </main> 
-
-    <!--MAIN-->  
-     </section> 
+        <div class="about-section">
+            <div class="aboutme-image"></div>
+            <div class="aboutme-text">
+                <p>A passionate developer who loves coding and building projects that make a difference. I enjoy
+                    exploring new technologies, solving challenging problems, and creating websites and apps that are
+                    both functional and user-friendly. Learning and improving my skills every day keeps me motivated,
+                    and I’m always excited to turn ideas into real solutions.</p>
         
-    <!--NAVBAR-->
+        </div>
+        </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="Image/earth.jpeg" alt="Earth Facts">
+                    <div class="card-text">
+                        <h3>Earth Facts</h3>
+                        <p>A simple web application that provides interesting facts about Earth.</p>
+                        <a href="https://science.nasa.gov/earth/facts/" class="view-project-btn" target="_parent">View Project</a>
+                        
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-hero">
+                    <img src="Image/BBC_World_News_2022_(Boxed).svg.png" alt="BBC News Clone">
+                    <div class="hero-text">
+                        <h3>BBC News Clone</h3>
+                        <p>A clone of the BBC News website, built using HTML and CSS.</p>
+                        <a href="https://www.bbc.co.uk/bitesize/guides/zc6rcdm/revision/1" class="view-project-btn" target="_parent">View Project</a>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-container">
+                    <img src="Image/download (5).png" alt="Mali News">
+                    <div class="container-text">
+                        <h3>Mali News</h3>
+                        <p>Charges against Choguel Maiga comes as the military crackdown</p>
+                        <a href="https://www.aljazeera.com/where/mali/" class="view-project-btn" target="_parent">View Project</a>
+
+                    </div>
+            </div>
+            </div>
+        </section>
+        <!-- Contact Me Section -->
+        <section id="contactme" class="contactme">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or social media. I'm always open to
+                discussing new projects, collaborations, or opportunities to learn and grow.</p>
+            <form class="contact-form" action="mailto:alvinkkeita@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <a href="mailto:alvinkkeita@gmail.com">Email</a>
+                <a href="https://www.facebook.com/alvink.keita" target="_parent">Facebook</a>
+                <a href="https://www.linkedin.com/in/alvin-keita-5b2b2523b" target="_parent">LinkedIn</a>
+                
+            </div>
+                </section>
+            <footer>
+                <p>&copy; 2024 Alvin K. Keita. All rights reserved.</p>
+                <div class="footer-social-links">
+                    <a href="mailto:alvinkkeita@gmail.com" title="Email">
+                        <img src="Image/download4.jpg" alt="Email">
+                    </a>
+                    <a href="https://www.facebook.com/alvink.keita" target="_parent" title="Facebook">
+                        <img src="Image/download (1).png" alt="Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/alvin-keita-5b2b2523b" target="_parent" title="LinkedIn">
+                        <img src="Image/download (2).png" alt="LinkedIn">
+                    </a>
+                </div>
+            </footer>
+        </body>
+        </html>
